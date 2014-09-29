@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+                applicationComplete="srv.send()"
+                backgroundColor="#ffffff" viewSourceURL="srcview/index.html">
+
+  <mx:HTTPService id="srv" url="http://www.firststepsinflex.com/data.php"/>
+
+  <mx:DataGrid dataProvider="{srv.lastResult.list.month}"/>
+
+</mx:Application>
